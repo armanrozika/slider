@@ -1,0 +1,68 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.main-wrapper{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px #000 solid;
+	padding: 10px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider-wrapper{
+	width: 1550px;
+	background-color: pink;
+	padding: 10px 0;
+	position: relative;
+	transition: all 300ms ease-in-out;
+	left: 0;
+}
+
+.slide{
+	width: 300px;
+	height: 100px;
+	background-color: green;
+	margin-right: 10px;
+	float: left;
+}
+
+.slider-wrapper:after{
+	content:'';
+	clear: both;
+	display: table;
+}
+
+
+.arrow{
+	position: absolute; 
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 30px;
+	background-color: grey;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.arrow.right{
+	right: 0;
+}
+
+.black{
+	background-color: black;
+}
+
+.red{
+	background-color: red;
+}
+
+.blue{
+	background-color: blue;
+}
+
+.purple{
+	background-color: purple;
+}
